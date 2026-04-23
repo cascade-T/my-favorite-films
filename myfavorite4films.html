@@ -1,0 +1,81 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.page { background: #0f0f0f; min-height: 100vh; padding: 3rem 2rem 2rem; font-family: var(--font-sans); }
+.header { margin-bottom: 3rem; }
+.header h1 { font-size: 28px; font-weight: 500; color: #f0f0f0; letter-spacing: -0.5px; }
+.header p { font-size: 14px; color: #666; margin-top: 6px; }
+.films { display: flex; flex-direction: column; gap: 2.5rem; }
+.film-row { display: grid; grid-template-columns: 160px 1fr; gap: 2rem; align-items: start; padding-bottom: 2.5rem; border-bottom: 0.5px solid #1e1e1e; }
+.film-row:last-child { border-bottom: none; }
+.poster { width: 160px; border-radius: 8px; overflow: hidden; background: #1a1a1a; aspect-ratio: 2/3; }
+.poster img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 8px; }
+.film-info { padding-top: 6px; }
+.film-title { font-size: 18px; font-weight: 500; color: #f0f0f0; margin-bottom: 4px; }
+.film-year { font-size: 12px; color: #555; margin-bottom: 14px; }
+.film-quote { font-size: 14px; color: #999; line-height: 1.8; font-style: italic; border-left: 2px solid #2a2a2a; padding-left: 14px; }
+.footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 0.5px solid #1e1e1e; display: flex; align-items: center; justify-content: space-between; }
+.footer-label { font-size: 13px; color: #555; }
+.lb-link { font-size: 13px; color: #99c430; text-decoration: none; }
+.lb-link:hover { color: #b8e05a; }
+</style>
+
+<div class="page">
+  <div class="header">
+    <h1>En sevdiğim filmler</h1>
+    <p>Benim için bir şeyler ifade eden dört film.</p>
+  </div>
+
+  <div class="films">
+
+    <div class="film-row">
+      <div class="poster">
+        <img src="https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar">
+      </div>
+      <div class="film-info">
+        <div class="film-title">Interstellar</div>
+        <div class="film-year">2014 · Christopher Nolan</div>
+        <div class="film-quote">"Biz cevap ararız, ama bazen cevap bizi beklemek zorunda kalır. Zaman görecelidir — ama sevgi değil."</div>
+      </div>
+    </div>
+
+    <div class="film-row">
+      <div class="poster">
+        <img src="https://a.ltrbxd.com/resized/film-poster/2/3/8/2/6/23826-fate-0-1000-0-1500-crop.jpg?v=21e6a2b08c" alt="Yazgı">
+      </div>
+      <div class="film-info">
+        <div class="film-title">Yazgı</div>
+        <div class="film-year">2001 · Zeki Demirkubuz</div>
+        <div class="film-quote">"Hayat ne anlam taşır, ne de anlamsızlık. Sadece akar — ve biz içinde sürükleniriz, bazen fark etmeden."</div>
+      </div>
+    </div>
+
+    <div class="film-row">
+      <div class="poster">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/jeBeQrUjuLREnFJtDLlNTw7dXnl.jpg" alt="Scent of a Woman">
+      </div>
+      <div class="film-info">
+        <div class="film-title">Scent of a Woman</div>
+        <div class="film-year">1992 · Martin Brest</div>
+        <div class="film-quote">"Bir adam hatalar yapar, hayatı boyunca. Ama bunları sahiplenmek — işte gerçek cesaret budur."</div>
+      </div>
+    </div>
+
+    <div class="film-row">
+      <div class="poster">
+        <img src="https://image.tmdb.org/t/p/w342/q719jXXEzOoYaps6babgKnONONX.jpg" alt="Your Name">
+      </div>
+      <div class="film-info">
+        <div class="film-title">Your Name.</div>
+        <div class="film-year">2016 · Makoto Shinkai</div>
+        <div class="film-quote">"Bazen bir şeyi özlersin ama ne olduğunu bilemezsin. Belki de bir kişidir. Belki de ulaşamadığın bir an."</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <span class="footer-label">Tüm izlediklerim</span>
+    <a href="https://letterboxd.com/_beratT/" class="lb-link" target="_blank">letterboxd.com/_beratT</a>
+  </div>
+</div>
